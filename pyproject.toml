@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recession-classifier"
+version = "0.1.0"
+description = "Cache-first recession classification pipeline using Treasury spread, unemployment, and S&P 500 returns."
+requires-python = ">=3.12,<3.13"
+readme = "README.md"
+authors = [{ name = "GitHub Copilot" }]
+dependencies = [
+	"joblib==1.4.2",
+	"matplotlib==3.10.1",
+	"numpy==1.26.4",
+	"openpyxl==3.1.5",
+	"pandas==2.2.3",
+	"requests==2.32.3",
+	"scikit-learn==1.6.1",
+	"yfinance==0.2.58",
+]
+
+[project.scripts]
+recession-classifier = "recession_classifier.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

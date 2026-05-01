@@ -1,0 +1,56 @@
+{
+  "artifact_paths": {
+    "coefficient_plot": "/Users/dennis/Desktop/src/recession/outputs/plots/logistic_coefficients_full.png",
+    "confusion_plot": "/Users/dennis/Desktop/src/recession/outputs/plots/confusion_matrix_full.png",
+    "metrics": "/Users/dennis/Desktop/src/recession/outputs/metrics/metrics_full.json",
+    "predictions": "/Users/dennis/Desktop/src/recession/outputs/metrics/predictions_full.csv",
+    "probability_plot": "/Users/dennis/Desktop/src/recession/outputs/plots/recession_probability_full.png"
+  },
+  "dataset_path": "/Users/dennis/Desktop/src/recession/data/processed/modeling_dataset_full.csv",
+  "feature_columns": [
+    "yield_spread_lag1",
+    "yield_spread_change_lag1",
+    "unemployment_rate_lag1",
+    "unemployment_change_lag1",
+    "sp500_return_lag1"
+  ],
+  "missing_summary": {
+    "sp500_return": 1,
+    "sp500_return_lag1": 2,
+    "unemployment_change": 3,
+    "unemployment_change_lag1": 4,
+    "unemployment_rate": 1,
+    "unemployment_rate_lag1": 2,
+    "yield_spread": 0,
+    "yield_spread_change": 1,
+    "yield_spread_change_lag1": 2,
+    "yield_spread_lag1": 1
+  },
+  "rows": 552,
+  "run_config": {
+    "base_feature_columns": [
+      "yield_spread",
+      "yield_spread_change",
+      "unemployment_rate",
+      "unemployment_change",
+      "sp500_return"
+    ],
+    "end_date": "2025-12-31",
+    "feature_columns": [
+      "yield_spread_lag1",
+      "yield_spread_change_lag1",
+      "unemployment_rate_lag1",
+      "unemployment_change_lag1",
+      "sp500_return_lag1"
+    ],
+    "mode": "full",
+    "seed": 42,
+    "split_config": {
+      "test_end": "2025-12-31",
+      "train_end": "2006-12-31",
+      "validation_end": "2014-12-31"
+    },
+    "start_date": "1980-01-01"
+  },
+  "target_positive_months": 58
+}

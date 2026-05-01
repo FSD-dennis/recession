@@ -1,0 +1,66 @@
+{
+  "primary_metric": {
+    "name": "test_recession_recall",
+    "value": 0.5
+  },
+  "test": {
+    "accuracy": 0.8409090909090909,
+    "confusion_matrix": [
+      [
+        110,
+        20
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "f1": 0.08695652173913043,
+    "positive_months": 2,
+    "precision": 0.047619047619047616,
+    "predicted_positive_months": 21,
+    "recession_recall": 0.5,
+    "roc_auc": 0.7807692307692308,
+    "rows": 132
+  },
+  "train": {
+    "accuracy": 0.8333333333333334,
+    "confusion_matrix": [
+      [
+        238,
+        48
+      ],
+      [
+        6,
+        32
+      ]
+    ],
+    "f1": 0.5423728813559322,
+    "positive_months": 38,
+    "precision": 0.4,
+    "predicted_positive_months": 80,
+    "recession_recall": 0.8421052631578947,
+    "roc_auc": 0.9036621273463379,
+    "rows": 324
+  },
+  "validation": {
+    "accuracy": 0.875,
+    "confusion_matrix": [
+      [
+        71,
+        7
+      ],
+      [
+        5,
+        13
+      ]
+    ],
+    "f1": 0.6842105263157895,
+    "positive_months": 18,
+    "precision": 0.65,
+    "predicted_positive_months": 20,
+    "recession_recall": 0.7222222222222222,
+    "roc_auc": 0.8846153846153846,
+    "rows": 96
+  }
+}

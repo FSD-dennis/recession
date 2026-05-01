@@ -1,0 +1,56 @@
+{
+  "artifact_paths": {
+    "coefficient_plot": "/Users/dennis/Desktop/src/recession/outputs/plots/logistic_coefficients_sample.png",
+    "confusion_plot": "/Users/dennis/Desktop/src/recession/outputs/plots/confusion_matrix_sample.png",
+    "metrics": "/Users/dennis/Desktop/src/recession/outputs/metrics/metrics_sample.json",
+    "predictions": "/Users/dennis/Desktop/src/recession/outputs/metrics/predictions_sample.csv",
+    "probability_plot": "/Users/dennis/Desktop/src/recession/outputs/plots/recession_probability_sample.png"
+  },
+  "dataset_path": "/Users/dennis/Desktop/src/recession/data/processed/modeling_dataset_sample.csv",
+  "feature_columns": [
+    "yield_spread_lag1",
+    "yield_spread_change_lag1",
+    "unemployment_rate_lag1",
+    "unemployment_change_lag1",
+    "sp500_return_lag1"
+  ],
+  "missing_summary": {
+    "sp500_return": 1,
+    "sp500_return_lag1": 2,
+    "unemployment_change": 1,
+    "unemployment_change_lag1": 2,
+    "unemployment_rate": 0,
+    "unemployment_rate_lag1": 1,
+    "yield_spread": 0,
+    "yield_spread_change": 1,
+    "yield_spread_change_lag1": 2,
+    "yield_spread_lag1": 1
+  },
+  "rows": 168,
+  "run_config": {
+    "base_feature_columns": [
+      "yield_spread",
+      "yield_spread_change",
+      "unemployment_rate",
+      "unemployment_change",
+      "sp500_return"
+    ],
+    "end_date": "1993-12-31",
+    "feature_columns": [
+      "yield_spread_lag1",
+      "yield_spread_change_lag1",
+      "unemployment_rate_lag1",
+      "unemployment_change_lag1",
+      "sp500_return_lag1"
+    ],
+    "mode": "sample",
+    "seed": 42,
+    "split_config": {
+      "test_end": "1993-12-31",
+      "train_end": "1987-12-31",
+      "validation_end": "1990-12-31"
+    },
+    "start_date": "1980-01-01"
+  },
+  "target_positive_months": 30
+}
